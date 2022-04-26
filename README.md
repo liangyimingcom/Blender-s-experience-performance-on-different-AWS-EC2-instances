@@ -1,3 +1,5 @@
+# 主流渲染平台Blender在不同 AWS EC2 实例的使用体验表现（GPU与非GPU实例性能对比）
+
 [本文[github更新地址](https://github.com/liangyimingcom/Blender-s-experience-performance-on-different-AWS-EC2-instances)] tag: Blender在不同AWS-EC2实例的使用体验表现
 
 
@@ -8,6 +10,15 @@
 2. Blender在没有GPU的EC2中的使用体验；
 3. Blender在有无GPU的EC2下的性能对比；
 4. 其他细节；
+
+# 
+# 〇、业务需求与解决方案：
+
+1. Blender为业界主流渲染平台，拥有大量的用户受众。AWS作为Blender基金会的赞助商之一，也投入了大量研发资源以其满足匹配需求；
+
+2. 在AWS上使用Blender渲染通常会选用G4/G5 EC2 Instance，对于批量渲染任务来说G4 Spot是最佳选择，但是受制于G Series实例数量的限制，用户提出可否采用无GPU的EC2Instance替代；
+
+3. 以下PoC对此问题进行实际的论证实验工作；
 
 
 
